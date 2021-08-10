@@ -1,3 +1,93 @@
 body {
+  background:#085C7C;
+  font-family: 'Montserrat', sans-serif;
+  color:#FFFFFF;
   
+}
+
+.title {
+  text-align: center;
+}
+
+.input-form {
+  text-align: center;
+  padding-top: 11px;
+}
+
+.input-form input {
+  width: 339px;
+  height: 33px;
+  color: #FFFFFF;
+  background-color: rgba(207, 207, 207, 0.18);
+  border-color: rgba(207, 207, 207, 0.18);
+  border-radius: 10px;
+  border: 0px;
+  
+}
+
+.input-form2 {
+  text-align: center;
+  padding-top: 11px;
+}
+
+.input-form2 input{
+  color: #FFFFFF;
+  background-color: rgba(207, 207, 207, 0.18);
+  border-color: rgba(207, 207, 207, 0.18);
+  border-radius: 10px;
+  border: 0px;
+}
+
+.one {
+  width: 226px;
+  height: 33px;
+  margin-right: 8px;
+}
+
+.two {
+  width: 100px;
+  height: 33px;
+}
+
+input::-webkit-input-placeholder { color: rgba(255, 255, 255, 0.8); font-family: 'Montserrat', sans-serif; }
+
+select { color: rgba(255, 255, 255, 0.8); font-family: 'Montserrat', sans-serif; }
+
+.slct {
+  text-align: center;
+  padding-top: 25px;
+}
+
+.slct select {
+  width: 339px;
+  height: 33px;
+  color: #FFFFFF;
+  background-color: rgba(207, 207, 207, 0.18);
+  border-color: rgba(207, 207, 207, 0.18);
+  border-radius: 10px;
+  border: 0px;
+}
+
+.chbox {
+  text-align: center;
+  padding-top: 11px;
+}
+
+.info {
+  text-align: center;
+  padding-top: 11px;
+}
+
+.button {
+  text-align: center;
+  padding-top: 11px;
+}
+
+.button button {
+  width: 195px;
+  height: 43px;
+  background: rgba(165, 212, 238, 0.18);
+  border: 0px;
+  color:#FFFFFF;
+  font-family: 'Montserrat', sans-serif;
 }
