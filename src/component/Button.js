@@ -1,9 +1,9 @@
 import React from 'react';
 
-function Button() {
+function Button(props) {
     return (
         <div className="button">
-            <button>Создать клиента</button>
+            <button onClick={props.validate}>Создать клиента</button>
         </div>
     )
 }
