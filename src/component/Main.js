@@ -6,71 +6,12 @@ import Input from './Input';
 import Input2 from './Input2';
 import Select from './Select';
 import Title from './Title';
-
-function validate(e) {
-    let surname = document.getElementById('surname').value;
-    let name = document.getElementById('name').value;
-    let number = document.getElementById('number').value;
-    let city = document.getElementById('city').value;
-    let date = document.getElementById('date').value;
-    let group = document.getElementById('group').value;
-    let type = document.getElementById('type').value;
-    let born = document.getElementById('born').value;
-    let sex = document.getElementById('sex').value;
-
-    if (surname.length == 0) {
-        document.getElementById("surnamef").innerHTML="*Укажите фамилию";
-        window.scroll(0, 0);
-        e.preventDefault();
-    }
-
-    if (name.length == 0) {
-        document.getElementById("namef").innerHTML="*Укажите имя";
-        window.scroll(0, 0);
-        e.preventDefault();
-    }
-
-    if (number.length == 0) {
-        document.getElementById("numberf").innerHTML="*Укажите номер телефона";
-        window.scroll(0, 0);
-        e.preventDefault();
-    }
-
-    if (city.length == 0) {
-        document.getElementById("cityf").innerHTML="*Укажите город";
-        e.preventDefault();
-    }
-
-    if (date.length == 0) {
-        document.getElementById("datef").innerHTML="*Укажите дату выдачи";
-        e.preventDefault();
-    }
-
-    if (group == "*Группа клиентов") {
-        document.getElementById("groupf").innerHTML="*Укажите группу клиентов";
-        e.preventDefault();
-    }
-
-    if (type == "*Тип документа") {
-        document.getElementById("typef").innerHTML="*Укажите тип документа";
-        e.preventDefault();
-    }
-    
-    if (born.length == 0) {
-        document.getElementById("bornf").innerHTML="*Укажите дату рождения ";
-        e.preventDefault();
-    }
-
-    if (sex.length == 0) {
-        document.getElementById("sexf").innerHTML="*Укажите пол";
-        e.preventDefault();
-    }
-}
+import validate from '../scripts/validate';
 
 function Main() {
     return(
         <div>
-            <form name="validate_from" onSubmit="return validate()">
+            <form name="validate_from" onSubmit={validate}>
                 <Title/>
                 <Input id1={"surname"} id2={"surnamef"} pholder="*Фамилия"/>
                 <Input id1={"name"} id2={"namef"} pholder="*Имя"/>
