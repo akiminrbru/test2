@@ -8,6 +8,12 @@ import Select from './Select';
 import Title from './Title';
 import validate from '../scripts/validate';
 
+function create() {
+    if(validate == true) {
+        alert("усп");
+    }
+}
+
 function Main() {
     return(
         <div>
@@ -43,7 +49,7 @@ function Main() {
                 <Input2 pholder1="Серия" pholder2="Номер"/>
                 <Input pholder="Кем выдан"/>
                 <Input id1={"date"} id2={"datef"} pholder="*Дата выдачи"/>
-                <Button validate={validate}/>
+                <Button create={create}/>
             </form>
         </div>
     )

@@ -75,6 +75,7 @@ function validate(e) {
         document.getElementById("sexf").innerHTML="";
     }
 
+    return true;
 }
 
 export default validate;
